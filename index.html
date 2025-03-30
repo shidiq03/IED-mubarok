@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan Idul Fitri</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle, #f0f8ff, #e0f7fa);
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            width: 350px;
+            height: 450px;
+            background: linear-gradient(135deg, #0288d1, #26c6da);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" onclick="showMessage()">
+        <h2>Selamat Hari Raya Idul Fitri 1446 H</h2>
+        <p id="message">Klik untuk mendapatkan doa spesial!</p>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerHTML = 
+            "Semoga di hari yang suci ini, kedamaian dan kebahagiaan selalu menyertai langkah kita. Taqabbalallahu minna wa minkum. Mohon maaf lahir dan batin.";
+        }
+    </script>
+</body>
+</html>
